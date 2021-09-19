@@ -1,5 +1,5 @@
 {
-    "name": "wpp-generator",
+    "name": "wpp-generate",
     "version": "1.0.0",
     "description": "Generate a WordPress plugin from a boilerplate.",
     "main": "index.js",
@@ -17,14 +17,14 @@
     "keywords": [
         "wordpress",
         "plugin",
-        "generator"
+        "generate"
     ],
     "author": "Roel Magdaleno",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/roelmagdaleno/wpp-generator/issues"
+        "url": "https://github.com/roelmagdaleno/wpp-generate/issues"
     },
-    "homepage": "https://github.com/roelmagdaleno/wpp-generator#readme",
+    "homepage": "https://github.com/roelmagdaleno/wpp-generate#readme",
     "dependencies": {
         "chalk": "^4.1.2",
         "cli-welcome": "^2.2.2",

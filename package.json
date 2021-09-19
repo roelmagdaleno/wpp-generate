@@ -1,0 +1,38 @@
+{
+    "name": "wpp-generator",
+    "version": "1.0.0",
+    "description": "Generate a WordPress plugin from a boilerplate.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "wpp-generate": "./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roelmagdaleno/wpp-generator.git"
+    },
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "generator"
+    ],
+    "author": "Roel Magdaleno",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/roelmagdaleno/wpp-generator/issues"
+    },
+    "homepage": "https://github.com/roelmagdaleno/wpp-generator#readme",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "cli-welcome": "^2.2.2",
+        "constant-case": "^3.0.4",
+        "inquirer": "^8.1.5",
+        "meow": "^10.1.1",
+        "ora": "^6.0.1",
+        "promisify-child-process": "^4.1.1",
+        "replace-in-file": "^6.2.0"
+    }
+}

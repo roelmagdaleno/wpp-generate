@@ -4,6 +4,7 @@ import path from 'path';
 import { constantCase } from 'constant-case';
 
 export default async (pluginPath, answers) => {
+    const constantPlugin = constantCase(answers['pluginSlug']);
     const replaceVariables = {
         files: [
             path.join(pluginPath, 'plugin-name.php'),
@@ -17,7 +18,9 @@ export default async (pluginPath, answers) => {
             /{{version}}/g,
             /{{author}}/g,
             /{{author_uri}}/g,
-            /Plugin_Name/g
+            /Plugin_Name/g,
+            /PLUGIN_/g,
+            /class-plugin-name.php/g
         ],
         to: [
             answers['pluginName'],
@@ -27,7 +30,9 @@ export default async (pluginPath, answers) => {
             answers['version'],
             answers['author'],
             answers['authorURI'],
-            constantCase(answers['pluginSlug'])
+            constantPlugin,
+            `${ constantPlugin }_`,
+            `class-${ answers['pluginSlug'] }.php`
         ]
     };
 
